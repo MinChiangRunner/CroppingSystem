@@ -1,0 +1,46 @@
+{
+  "name":"pre_vi_cal",
+  "baseClass":"ENVITaskFromProcedure",
+  "routine":"pre_vi_cal",
+  "displayName":"Cal Spectral Indices",
+  "description":"This task performs Spectral Indices Calculate.",
+  "parameters":[
+    {
+      "name":"INPUTDIR",
+      "displayName":"Select Input Directory",
+      "dataType":"ENVIURI",
+      "direction":"input",
+      "parameterType":"required",
+      "description":"Specify the Input Directory."
+    },
+    {
+      "name":"indexname",
+      "displayName":"Index Name",
+      "dataType":"string",
+      "direction":"input",
+      "parameterType":"required",
+      "choiceList":[
+        "NDVI",
+        "EVI",
+        "LSWI"
+      ],
+      "description":"Specify the Index Name to Calculate."
+    },
+    {
+	  "name":"OUTPUTDIR",
+      "displayName":"Select Output Directory",
+      "dataType":"ENVIURI",
+      "direction":"input",
+      "parameterType":"required",
+      "description":"Specify the Output Directory."
+    },
+        {
+	  "name":"OUTPUTDIR",
+      "displayName":"Select Output Directory",
+      "dataType":"ENVIURI",
+      "direction":"input",
+      "parameterType":"required",
+      "description":"Specify the Output Directory."
+    }
+  ]
+}
